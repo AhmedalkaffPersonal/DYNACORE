@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:WebApi.Controllers.v1.ContactPersonController.Create(Application.Features.ContactPersonFeatures.Commands.CreateContactPersonCommand)">
+            <summary>
+            Creates a New Contact Person.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.ContactPersonController.GetAll">
+            <summary>
+            Gets all Contact Persons.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.ContactPersonController.GetById(System.Guid)">
+            <summary>
+            Gets Contact Person Entity by Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.ContactPersonController.Delete(System.Guid)">
+            <summary>
+            Deletes Contact Person Entity based on Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.ContactPersonController.Update(System.Guid,Application.Features.ContactPersonFeatures.Commands.UpdateContactPersonCommand)">
+            <summary>
+            Updates the Contact Person Entity based on Id.   
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.ProductController.Create(Application.Features.ProductFeatures.Commands.CreateProductCommand)">
+            <summary>
+            Creates a New Product.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.ProductController.GetAll">
+            <summary>
+            Gets all Products.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.ProductController.GetById(System.Guid)">
+            <summary>
+            Gets Product Entity by Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.ProductController.Delete(System.Guid)">
+            <summary>
+            Deletes Product Entity based on Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.ProductController.Update(System.Guid,Application.Features.ProductFeatures.Commands.UpdateProductCommand)">
+            <summary>
+            Updates the Product Entity based on Id.   
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.VendorController.Create(Application.Features.VendorFeatures.Commands.CreateVendorCommand)">
+            <summary>
+            Creates a New Vendor.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.VendorController.GetAll">
+            <summary>
+            Gets all Vendors.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.VendorController.GetById(System.Guid)">
+            <summary>
+            Gets Vendor Entity by Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.VendorController.Delete(System.Guid)">
+            <summary>
+            Deletes Vendor Entity based on Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.v1.VendorController.Update(System.Guid,Application.Features.VendorFeatures.Commands.UpdateVendorCommand)">
+            <summary>
+            Updates the Vendor Entity based on Id.   
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
