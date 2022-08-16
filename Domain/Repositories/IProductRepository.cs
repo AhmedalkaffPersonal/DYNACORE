@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Domain.Common;
 
 namespace Domain.Repositories
 {
-    internal class IProductRepository
+    public class IRepository<T> where T : BaseEntity
     {
     }
 }

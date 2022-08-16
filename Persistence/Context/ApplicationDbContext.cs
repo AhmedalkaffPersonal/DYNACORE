@@ -25,6 +25,17 @@ namespace Persistence.Context
             return base.SaveChangesAsync();
         }
 
-
     }
+
+    //public static class ApplicationDbContextExtentions
+    //{
+    //    public static IQueryable<Vendor> VendorWithProducts(this ApplicationDbContext dbContext, Guid vendorId)
+    //    {
+    //        return dbContext.Vendors.Where(vendor => vendor.Id == vendorId)
+    //            .Include(vendor => vendor.Products)
+    //            .Include(vendor => vendor.ContactPerson)
+    //            .AsQueryable();
+    //    }
+
+    //}
 }

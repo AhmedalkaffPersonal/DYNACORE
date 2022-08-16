@@ -20,6 +20,7 @@
     <Folder Include="Common\Behaviours\" />
     <Folder Include="Common\Mappings\" />
     <Folder Include="Common\Models\" />
+    <Folder Include="Dto\" />
   </ItemGroup>
 
 </Project>

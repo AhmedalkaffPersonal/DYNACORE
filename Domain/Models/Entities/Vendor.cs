@@ -23,7 +23,7 @@ namespace Domain.Models.Entities
         [DataType(DataType.PhoneNumber)]
         public string? PhoneNumber { get; set; }
 
-        public Guid ContactPersonId { get; set; }
+        public Guid? ContactPersonId { get; set; }
         public virtual ContactPerson? ContactPerson { get; set; }
 
         public ICollection<Product>? Products { get; set; }

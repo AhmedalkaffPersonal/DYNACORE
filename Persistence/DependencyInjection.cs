@@ -6,7 +6,7 @@ using Persistence.Context;
 
 namespace Persistence
 {
-    public static class DependencyInjection
+    public static class ConfigureServices
     {
         public static void AddPersistence(this IServiceCollection services, IConfiguration configuration)
         {

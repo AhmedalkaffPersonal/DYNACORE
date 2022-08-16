@@ -93,7 +93,7 @@ namespace Persistence.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<Guid>("ContactPersonId")
+                    b.Property<Guid?>("ContactPersonId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
@@ -130,9 +130,7 @@ namespace Persistence.Migrations
                 {
                     b.HasOne("Domain.Models.Entities.ContactPerson", "ContactPerson")
                         .WithMany()
-                        .HasForeignKey("ContactPersonId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ContactPersonId");
 
                     b.Navigation("ContactPerson");
                 });

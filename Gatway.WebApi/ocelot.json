@@ -1,0 +1,77 @@
+{
+  "GlobalConfiguration": { "BaseUrl": "https://localhost:5001" },
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/Product/",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 15700
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Product/",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    }
+    {
+      "DownstreamPathTemplate": "/api/v1/Product/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 15700
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Product/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Vendor",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 15700
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Vendor",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Vendor/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 15700
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Vendor/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/ContactPerson",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 15700
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ContactPerson",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/ContactPerson/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 15700
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ContactPerson/{id}",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WebApi.Controllers
+namespace Web.Controllers
 {
     [ApiController]
     public class ErrorController : ControllerBase

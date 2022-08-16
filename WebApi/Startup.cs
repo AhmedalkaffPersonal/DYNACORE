@@ -20,9 +20,12 @@ namespace WebApi
 
         public IConfiguration Configuration { get; }
 
+        private const string DefaultCorsPolicyName = "localhost";
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllers();
 
             services.AddApplicationServices();
@@ -59,18 +62,21 @@ namespace WebApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2VVhiQlFaclxJVHxIekx0RWFbb1h6cVRMYV9BNQtUQF1hS35bd0BjX3pbc31XQmJe");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.UseExceptionHandler("/api/error");
+
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
+
+            //app.UseCors(DefaultCorsPolicyName);
 
             #region Swagger
             app.UseSwagger();
@@ -83,6 +89,17 @@ namespace WebApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                //endpoints.MapControllerRoute(
+                //    name: "default",
+                //    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                //endpoints.MapAreaControllerRoute(
+                //    name: "api",
+                //    areaName: "areas",
+                //    pattern: "{api}/{controller}/{action}/",
+                //    new { id = RouteParameter.Optional, action = RouteParameter.Optional });
+
+
             });
         }
     }
